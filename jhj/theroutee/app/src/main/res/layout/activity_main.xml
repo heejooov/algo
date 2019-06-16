@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:id="@+id/logo"
+                android:src="@mipmap/ic_logo"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="27dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:text="그루트"
+                />
+        </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_margin="16dp"
+            android:layout_marginTop="15dp"
+            >
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="@drawable/r_corner_gray"
+
+                android:layout_marginTop="8dp" android:paddingLeft="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="7dp">
+                    <ImageView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="12dp" android:layout_height="match_parent"
+                        android:src="@mipmap/ic_destination" android:layout_marginRight="7dp"/>
+                    <EditText android:layout_width="match_parent" android:layout_height="48dp"
+                        android:hint="출발지를 입력해주세요." android:textSize="12sp"
+                        android:layout_marginTop="9dp" android:id="@+id/e_depart"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="32dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="12dp" android:layout_height="12dp"
+                        android:src="@mipmap/ic_location"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="7dp"/>
+
+                    <EditText android:layout_width="match_parent" android:layout_height="48dp"
+                        android:hint="도착지를 입력해주세요." android:textSize="12sp"
+                        android:layout_marginTop="15dp" android:id="@+id/e_dest"
+                        />
+                </LinearLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="44dp"
+                android:textSize="16dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:text="경로의 우선순위를 선택해주세요."
+                />
+
+            <LinearLayout
+
+                android:layout_width="match_parent" android:layout_height="104dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_time"
+                    android:orientation="vertical" android:layout_marginRight="8dp"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_time"
+                        android:layout_gravity="center" android:src="@mipmap/ic_time"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:textSize="12sp"
+                        android:text="시간" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_time"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_route"
+                    android:orientation="vertical" android:layout_marginRight="8dp"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_route"
+                        android:layout_gravity="center" android:src="@mipmap/ic_route"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:textSize="12sp"
+                        android:text="거리" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_route"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_money"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_money"
+                        android:layout_gravity="center" android:src="@mipmap/ic_money"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:textSize="12sp"
+                        android:text="비용" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_money"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="44dp"
+                android:textSize="16dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+
+                android:text="원하지 않는 교통수단을 선택해주세요."
+                />
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="104dp"
+                android:orientation="horizontal" android:layout_marginTop="6dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_taxi" android:layout_marginRight="8dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_taxi"
+                        android:layout_gravity="center" android:src="@mipmap/ic_taxi"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:textSize="12sp"
+                        android:text="택시" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_taxi"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_bus" android:layout_marginRight="8dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_bus"
+                        android:layout_gravity="center" android:src="@mipmap/ic_bus"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:textSize="12sp"
+                        android:text="버스" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_bus"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_train"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_train"
+                        android:layout_gravity="center" android:src="@mipmap/ic_train"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:textSize="12sp"
+                        android:text="지하철" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_train"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="104dp"
+                android:orientation="horizontal" android:layout_marginTop="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_bike" android:layout_marginRight="8dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_bike"
+                        android:layout_gravity="center" android:src="@mipmap/ic_bike"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:textSize="12sp"
+                        android:text="자전거" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_bike"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/r_corner_gray"
+                    android:id="@+id/l_walk"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/i_walk"
+                        android:layout_gravity="center" android:src="@mipmap/ic_walk"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:textSize="12sp"
+                        android:text="도보" android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/tv_walk"
+                        android:textColor="#484848"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="검색" android:textSize="12sp"
+        android:textColor="@color/white"
+        android:id="@+id/search"
+        android:background="@color/greeny_blue"/>
+</LinearLayout>
